@@ -1,0 +1,109 @@
+[root@node2 ~]# history
+    1  2020-11-21 06:32:16hostnamectl set-hostname node2.example.com
+    2  2020-11-21 06:32:16firewall-cmd --permanent --add-rich-rule "rule family="ipv4" source address="192.168.12.0/24" service name=ssh drop"
+    3  2020-11-21 06:32:16ip a
+    4  2020-11-21 06:32:16reboot
+    5  2020-11-21 06:32:16yum install nfs-utils -y
+    6  2020-11-21 06:32:16mkdir /tmp/mynfs
+    7  2020-11-21 06:32:16vim /etc/exports
+    8  2020-11-21 06:32:16exportfs -rv
+    9  2020-11-21 06:32:16firewall-cmd --permanent --add-service=nfs
+   10  2020-11-21 06:32:16firewall-cmd --reload 
+   11  2020-11-21 06:32:16history
+   12  2020-11-21 06:32:16vim /etc/hosts
+   13  2020-11-21 06:32:16hostname
+   14  2020-11-21 06:32:16cat /etc/hosts
+   15  2020-11-21 06:32:16ip a
+   16  2020-11-21 06:32:16cat /etc/hosts
+   17  2020-11-21 06:32:16ip a
+   18  2020-11-21 06:32:16ping node3.example.com 
+   19  2020-11-21 06:32:16history
+   20  2020-11-21 06:32:16systemctl restart nfs-server
+   21  2020-11-21 06:32:16systemctl enable nfs-server
+   22  2020-11-21 06:32:16ip a
+   23  2020-11-21 06:32:16#mount -o //node3.example.com/ARTIST 
+   24  2020-11-21 06:32:16mkdir /mnt/akon
+   25  2020-11-21 06:32:16mount -o //node3.example.com/ARTIST /mnt/akon/
+   26  2020-11-21 06:32:16mount -o username=samual //node3.example.com/ARTIST /mnt/akon/
+   27  2020-11-21 06:32:16df -hT
+   28  2020-11-21 06:32:16umount /mnt/akon/
+   29  2020-11-21 06:32:16vim /etc/fstab 
+   30  2020-11-21 06:32:16mkdir /root/test.sec
+   31  2020-11-21 06:32:16vim /root/test.sec
+   32  2020-11-21 06:32:16rmdir /root/test.sec/
+   33  2020-11-21 06:32:16vim /root/test.sec
+   34  2020-11-21 06:32:16vim /etc/fstab 
+   35  2020-11-21 06:32:16mount -av
+   36  2020-11-21 06:32:16df -hT
+   37  2020-11-21 06:32:16yum install httpd
+   38  2020-11-21 06:32:16cd /var/www/html/
+   39  2020-11-21 06:32:16cd
+   40  2020-11-21 06:32:16cp /usr/share/doc/httpd-2.4.6/httpd-vhosts.conf /etc/httpd/conf.d/one.cof
+   41  2020-11-21 06:32:16vim /etc/httpd/conf.d/one.cof 
+   42  2020-11-21 06:32:16ip a
+   43  2020-11-21 06:32:16vim /etc/hosts
+   44  2020-11-21 06:32:16httpd -t
+   45  2020-11-21 06:32:16systemctl restart httpd
+   46  2020-11-21 06:32:16systemctl enable httpd
+   47  2020-11-21 06:32:16firewall-cmd --permanent --add-service=http
+   48  2020-11-21 06:32:16firewall-cmd --reload 
+   49  2020-11-21 06:32:16vim /var/www/html/
+   50  2020-11-21 06:32:16cd /var/www/html/
+   51  2020-11-21 06:32:16ls
+   52  2020-11-21 06:32:16vim index.html
+   53  2020-11-21 06:32:16systemctl restart httpd
+   54  2020-11-21 06:32:16cd
+   55  2020-11-21 06:32:16systemctl enable httpd
+   56  2020-11-21 06:32:16curl localhost
+   57  2020-11-21 06:32:16firefox http://divya.example.com
+   58  2020-11-21 06:32:16firewall-cmd --list-all
+   59  2020-11-21 06:32:16history
+   60  2020-11-21 06:32:16ip 
+   61  2020-11-21 06:32:16ip a
+   62  2020-11-21 06:32:16cat /etc/hosts
+   63  2020-11-21 06:32:16vim /etc/httpd/conf.d/one.cof 
+   64  2020-11-21 06:32:16vim /etc/hosts
+   65  2020-11-21 06:32:16systemctl restart httpd
+   66  2020-11-21 06:32:16systemctl enable httpd
+   67  2020-11-21 06:32:16firefox http://divya.example.com
+   68  2020-11-21 06:32:16curl divya.example.com
+   69  2020-11-21 06:32:16curl localhost
+   70  2020-11-21 06:32:16ped
+   71  2020-11-21 06:32:16pwd
+   72  2020-11-21 06:32:16mkdir /var/www/practice
+   73  2020-11-21 06:32:16cat > /var/www/practice/index.html 
+   74  2020-11-21 06:32:16cp /etc/httpd/conf.d/one.cof /etc/httpd/conf.d/two.conf
+   75  2020-11-21 06:32:16vim /etc/httpd/conf.d/two.conf 
+   76  2020-11-21 06:32:16vim /etc/hosts
+   77  2020-11-21 06:32:16curl div.example.com
+   78  2020-11-21 06:32:16systemctl restart httpd
+   79  2020-11-21 06:32:16systemctl enable httpd
+   80  2020-11-21 06:32:16curl div.example.com
+   81  2020-11-21 06:32:16pwd
+   82  2020-11-21 06:32:16mkdir /var/www/html/notes
+   83  2020-11-21 06:32:16touch /var/www/html/notes/myfile{1..10}.txt
+   84  2020-11-21 06:32:16vim /etc/httpd/conf.d/one.cof 
+   85  2020-11-21 06:32:16systemctl restart httpd
+   86  2020-11-21 06:32:16vim /etc/httpd/conf.d/one.cof 
+   87  2020-11-21 06:32:16systemctl restart httpd
+   88  2020-11-21 06:32:16systemctl enable httpd
+   89  2020-11-21 06:32:16vim /etc/httpd/conf.d/one.cof 
+   90  2020-11-21 06:32:16systemctl restart httpd
+   91  2020-11-21 06:32:16systemctl enable httpd
+   92  2020-11-21 06:32:16curl divya.example.com
+   93  2020-11-21 06:32:16mv /etc/httpd/conf.d/one.cof /etc/httpd/conf.d/one.conf
+   94  2020-11-21 06:32:16systemctl restart httpd
+   95  2020-11-21 06:32:16systemctl enable httpd
+   96  2020-11-21 06:32:16yum install targetcli
+   97  2020-11-21 06:32:16lsblk
+   98  2020-11-21 06:32:46df -hT
+   99  2020-11-21 06:33:38man iscsiadm
+  100  2020-11-21 06:35:13iscsiadm --mode node --targetname iqn.2018-19.diems.com:server --portal 192.168.26.143:3260 --login
+  101  2020-11-21 06:35:21lsblk
+  102  2020-11-21 06:35:26mount -av
+  103  2020-11-21 06:35:30lsblk
+  104  2020-11-21 06:35:39df -h
+  105  2020-11-21 06:35:47su - pratik
+  106  2020-11-21 07:00:43history
+  107  2020-11-21 07:01:10HISTTIMEFORMAT="%F %T"
+  108  2020-11-21 07:01:16history
