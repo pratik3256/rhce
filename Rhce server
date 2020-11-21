@@ -1,0 +1,101 @@
+root@node3 ~]# history
+    1  2020-11-21 05:53:13lsblk
+    2  2020-11-21 05:53:13hostname
+    3  2020-11-21 05:53:13hostnamectl set-hostname node.example.com
+    4  2020-11-21 05:53:13hostname
+    5  2020-11-21 05:53:13getenforce
+    6  2020-11-21 05:53:13man firewalld.richlanguage
+    7  2020-11-21 05:53:13firewall-cmd --permanent --add-rich-rule "rule family="ipv4" source address="192.168.12.0/24" service name=ssh drop"
+    8  2020-11-21 05:53:13firewall-cmd --reload 
+    9  2020-11-21 05:53:13nmcli connection add type team con-name team1 ifname team1 config 
+   10  2020-11-21 05:53:13cat /usr/share/doc/teamd-1.27/example_configs/activebackup_arp_ping_1.conf 
+   11  2020-11-21 05:53:13nmcli connection add type team con-name team1 ifname team1 config '{"runner":{"name": "activebackup"}}'
+   12  2020-11-21 05:53:13man nmcli-examples
+   13  2020-11-21 05:53:13#nmcli con add type team con-name Team1 ifname Team1 
+   14  2020-11-21 05:53:13man teamd.conf
+   15  2020-11-21 05:53:13#nmcli con add type team con-name Team1 ifname Team1 "runner": {"name": "activebackup"}
+   16  2020-11-21 05:53:13man nmcli-examples
+   17  2020-11-21 05:53:13nmcli con add type team con-name Team1-slave1 ifname eno1 master Team1
+   18  2020-11-21 05:53:13nmcli con add type team 
+   19  2020-11-21 05:53:13nmcli connection add type team-slave con-name port1 ifname eno1 master team1 
+   20  2020-11-21 05:53:13nmcli connection add type team-slave con-name port2 ifname eno2 master team1
+   21  2020-11-21 05:53:13nmcli connection modify team1 ipv4.addresses "192.168..25/24"
+   22  2020-11-21 05:53:13ip a
+   23  2020-11-21 05:53:13nmcli connection modify team1 ipv4.addresses "192.168.12"
+   24  2020-11-21 05:53:13nmcli connection modify team1 ipv4.addresses "192.168.12.0/24"
+   25  2020-11-21 05:53:13nmcli connection modify team1 ipv4.method static
+   26  2020-11-21 05:53:13nmcli connection down team1; nmcli connection up team1
+   27  2020-11-21 05:53:13teamdctl team1 state
+   28  2020-11-21 05:53:13nmcli connection down port1; nmcli connection up port1
+   29  2020-11-21 05:53:13nmcli connection up port1
+   30  2020-11-21 05:53:13yum install nfs-utils
+   31  2020-11-21 05:53:13hostname
+   32  2020-11-21 05:53:13hostnamectl set-hostname node3.example.com
+   33  2020-11-21 05:53:13reboot
+   34  2020-11-21 05:53:13ssh -X root@node2.example.com
+   35  2020-11-21 05:53:13vim /etc/hosts
+   36  2020-11-21 05:53:13ip a
+   37  2020-11-21 05:53:13vim /etc/hosts
+   38  2020-11-21 05:53:13ssh -X root@node2.example.com
+   39  2020-11-21 05:53:13mount -o node2.example.com/tmp/mynfs /mnt
+   40  2020-11-21 05:53:13mount node2.example.com/tmp/mynfs /mnt
+   41  2020-11-21 05:53:13mount -o node2.example.com:/tmp/mynfs /mnt
+   42  2020-11-21 05:53:13mount node2.example.com:/tmp/mynfs /mnt
+   43  2020-11-21 05:53:13ip a
+   44  2020-11-21 05:53:13mount node2.example.com:/tmp/mynfs /mnt
+   45  2020-11-21 05:53:13vim /etc/hosts
+   46  2020-11-21 05:53:13hostname
+   47  2020-11-21 05:53:13cat /etc/hosts
+   48  2020-11-21 05:53:13ip a
+   49  2020-11-21 05:53:13mount node2.example.com:/tmp/mynfs /mnt
+   50  2020-11-21 05:53:13mount -o node2.example.com:/tmp/mynfs /mnt
+   51  2020-11-21 05:53:13mkdir /nfsdata
+   52  2020-11-21 05:53:13mount node2.example.com:/tmp/mynfs /mnt
+   53  2020-11-21 05:53:13mount node2.example.com:/tmp/mynfs /nfsdata
+   54  2020-11-21 05:53:13vim /etc/fstab 
+   55  2020-11-21 05:53:13mount -av
+   56  2020-11-21 05:53:13ip a
+   57  2020-11-21 05:53:13mount -av
+   58  2020-11-21 05:53:13ip a
+   59  2020-11-21 05:53:13vim /etc/hosts
+   60  2020-11-21 05:53:13ping node2.example.com 
+   61  2020-11-21 05:53:13mount -av
+   62  2020-11-21 05:53:13yum install samba samba-client
+   63  2020-11-21 05:53:13mkdir /concert
+   64  2020-11-21 05:53:13vim /etc/samba/smb.conf
+   65  2020-11-21 05:53:13mkdir /dockyard
+   66  2020-11-21 05:53:13useradd samual
+   67  2020-11-21 05:53:13smbpasswd -a samual
+   68  2020-11-21 05:53:13useradd mitchel
+   69  2020-11-21 05:53:13smbpasswd -a mitchel
+   70  2020-11-21 05:53:13smbpasswd -a catherine
+   71  2020-11-21 05:53:13useradd catherine
+   72  2020-11-21 05:53:13smbpasswd -a catherine
+   73  2020-11-21 05:53:13setfacl -m u:samual:r-x /concert/
+   74  2020-11-21 05:53:13setfacl -m u:mitchel:rwx /dockyard/
+   75  2020-11-21 05:53:13setfacl -m u:catherine:r-x /dockyard/
+   76  2020-11-21 05:53:13man semanage fcontext
+   77  2020-11-21 05:53:13semanage fcontext -a -t samba_share_t "concert(/.*)?"
+   78  2020-11-21 05:53:13semanage fcontext -a -t samba_share_t "/concert(/.*)?"
+   79  2020-11-21 05:53:13semanage fcontext -a -t samba_share_t "/dockyard(/.*)?"
+   80  2020-11-21 05:53:13ls -Zd /concert/
+   81  2020-11-21 05:53:13restorecon -Rv /concert/
+   82  2020-11-21 05:53:13restorecon -Rv /dockyard/
+   83  2020-11-21 05:53:13getsebool -a | grep samba
+   84  2020-11-21 05:53:13setsebool -p samba_export_all_ro on
+   85  2020-11-21 05:53:13setsebool -P samba_export_all_ro on
+   86  2020-11-21 05:53:13setsebool -P samba_export_all_rw on
+   87  2020-11-21 05:53:13getsebool -a | grep samba
+   88  2020-11-21 05:53:13systemctl restart smb nmb
+   89  2020-11-21 05:53:13systemctl enable smb nmb
+   90  2020-11-21 05:53:13firewall-cmd --permanent --add-service=samba
+   91  2020-11-21 05:53:13firewall-cmd --reload 
+   92  2020-11-21 05:53:13ip a
+   93  2020-11-21 05:53:13vim /etc/hosts
+   94  2020-11-21 05:53:17qstat
+   95  2020-11-21 06:01:03df -hT
+   96  2020-11-21 06:44:02firewall-cmd --list-all
+   97  2020-11-21 06:44:38teamdctl team1 state
+   98  2020-11-21 06:45:18getenforce
+   99  2020-11-21 07:03:25HISTTIMEFORMAT="%F %T"
+  100  2020-11-21 07:03:28history
